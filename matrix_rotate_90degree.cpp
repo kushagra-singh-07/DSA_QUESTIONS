@@ -16,7 +16,6 @@ int main() {
             swap(arr[i][j], arr[j][i]);
         }
     }
-
     for(int i = 0; i < N; i++) {
         int start = 0, end = N - 1;
         while(start < end) {
@@ -24,8 +23,7 @@ int main() {
             start++;
             end--;
         }
-    }
-    
+    }  
     for(int i = 0; i < N; i++) {
         for(int j = 0; j < N; j++)
             cout << arr[i][j] << " ";
@@ -34,3 +32,4 @@ int main() {
 
     return 0;
 }
+
