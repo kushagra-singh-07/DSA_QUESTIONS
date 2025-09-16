@@ -2,16 +2,16 @@
 using namespace std;
 
 int main() {
-    int N, M;
-    cin >> N >> M;
+    int n, m;
+    cin >>n>>m;
 
     int arr[100][100];
-    for(int i = 0; i < N; i++)
-        for(int j = 0; j < M; j++)
+    for(int i = 0; i < n; i++)
+        for(int j = 0; j < m; j++)
             cin >> arr[i][j];
 
-    int top = 0, bottom = N - 1;
-    int left = 0, right = M - 1;
+    int top = 0, bottom = n - 1;
+    int left = 0, right = m - 1;
 
     while(top <= bottom && left <= right) {
        
@@ -36,3 +36,4 @@ int main() {
     }
     return 0;
 }
+
